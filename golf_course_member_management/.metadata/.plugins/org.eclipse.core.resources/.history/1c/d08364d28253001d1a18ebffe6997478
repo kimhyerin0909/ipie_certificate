@@ -1,0 +1,33 @@
+
+const month = document.getElementById("month");
+const user_name = document.getElementById("user_name");
+const user_id = document.getElementById("user_id");
+const place = document.getElementById("place");
+const class_name = document.getElementById("class_name");
+const class_cost = document.getElementById("class_cost");
+
+function handleUserInfo() {
+	user_id.value = user_name.value;	
+}
+
+function handleCost() {
+	if(user_id.value){
+		if(class_name.value){
+			if(user_id.value.substr(0, 1) === "2") {
+				class_cost.value = class_name.value / 2;
+			} else {
+				class_cost.value = class_name.value;
+			}
+		}
+	} else {
+		alert('유저아이디 없음')
+	}
+}
+
+function applyClass() {
+	console.log(class_name)
+	if(!month.value || !user_name.value || !user_id.value || !place.value || !class_name.value || !class_cost.value) {
+		alert("다 입력 안 됨")
+		return false;
+	}
+}

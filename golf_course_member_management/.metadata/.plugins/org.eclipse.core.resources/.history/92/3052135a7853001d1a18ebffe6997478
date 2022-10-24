@@ -1,0 +1,22 @@
+const user_name = document.getElementById("user_name");
+
+function handleUserInfo() {
+	const user_id = document.getElementById("user_id");
+	switch(user_name.value) {
+		case 1:
+			user_id.value = "10001";
+			break;
+		case 2:
+			user_id.value = "10002";
+			break;
+		case 3:
+			user_id.value = "10003";
+			break;
+		case 4:
+			user_id.value = "20001";
+			break;
+		case 5:
+			user_id.value = "20002";
+			break;
+	}
+}

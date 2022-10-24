@@ -1,0 +1,19 @@
+
+const month = document.getElementById("month");
+const user_name = document.getElementById("user_name");
+const user_id = document.getElementById("user_id");
+const place = document.getElementById("place");
+const class_name = document.getElementById("class_name");
+const class_cost = document.getElementById("class_cost");
+
+function handleUserInfo() {
+	user_id.value = user_name.value;	
+}
+
+function handleCost() {
+	let origin_cost = class_name.value;
+}
+
+function applyClass() {
+	
+}

@@ -1,0 +1,32 @@
+<%@page import="DBPKG.Util" %>
+<%@page import="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>교과목록 조회/수정</title>
+</head>
+<body>
+<jsp:include page="header.jsp"></jsp:include>
+<section>
+<h1>교과목 목록</h1>
+<form name="frm">
+<table border="1">
+<tr>
+<td>과목코드</td>
+<td>과목명</td>
+<td>학점</td>
+<td>담당강사</td>
+<td>요일</td>
+<td>시작시간</td>
+<td>종료시간</td>
+<td>삭제</td>
+</tr>
+</table>
+</form>
+</section>
+</body>
+</html>

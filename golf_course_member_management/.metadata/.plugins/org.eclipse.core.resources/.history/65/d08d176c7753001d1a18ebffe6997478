@@ -1,0 +1,7 @@
+const user_name = document.getElementById("user_name");
+const user_id = document.getElementById("user_id");
+
+function handleUserInfo() {
+	
+	alert(name.value)
+}

@@ -1,0 +1,25 @@
+
+const month = document.getElementById("month");
+const user_name = document.getElementById("user_name");
+const user_id = document.getElementById("user_id");
+const place = document.getElementById("place");
+const class_name = document.getElementById("class_name");
+const class_cost = document.getElementById("class_cost");
+
+function handleUserInfo() {
+	user_id.value = user_name.value;	
+}
+
+function handleCost() {
+	if(user_id.value){
+		if(user_id.value[0] === 2) {
+			origin_cost = class_name.value / 50;
+		}
+	} else {
+		alert('유저아이디 없음')
+	}
+}
+
+function applyClass() {
+	
+}

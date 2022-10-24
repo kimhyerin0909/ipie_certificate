@@ -1,0 +1,20 @@
+const user_name = document.getElementById("user_name");
+
+function handleUserInfo() {
+	const user_id = document.getElementById("user_id");
+	
+	console.log(user_name.value)
+	
+	if(user_name.value === "1") {
+		console.log(user_name.value)
+		user_id.value = user_name.value;
+	} else if(user_name.value === "2") {
+		user_id.value = "10002";
+	} else if(user_name.value === "3") {
+		user_id.value ="10003";
+	} else if(user_name.value === "4") {
+		user_id.value = "20001";
+	} else if(user_name.value === "5") {
+		user_id.value = "20001";
+	}
+}
